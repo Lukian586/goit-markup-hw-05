@@ -713,6 +713,7 @@ transform: translateY(-50%) translateX(-50%)
 fill: #ffffff;
 }
 
+.close-btn:hover,
 .close-btn:focus {
 background-color: #404bbf;
 border: none;
@@ -858,19 +859,14 @@ font-weight: 400;
     margin-right: 8px;
 }
 
-:root {
-    --accent-color: #404bbf;
-}
+
 
 .modal-input-check:checked + .user-agreement > .check-agreement{
-background-color: var(--accent-color);
+background-color: #404bbf;
 border: none;
 fill: #F4F4FD;
 }
 
-.check-agreement-icon {
-    fill: currentColor;
-}
    
 .send {
     display: block;
