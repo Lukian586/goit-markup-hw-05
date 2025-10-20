@@ -713,11 +713,14 @@ transform: translateY(-50%) translateX(-50%)
 fill: #ffffff;
 }
 
+.close-btn:focus {
+background-color: #404bbf;
+border: none;
+}
+
 .close-btn:hover,
 .close-btn:focus > .icon-close {
-    background-color: #404BBF;
-    color: white;
-    border: none;
+    fill: #ffffff;
 }
 
 .modal-caption {
@@ -734,11 +737,11 @@ fill: #ffffff;
  
 
 
-.modal-form-field {
+.modal-form-field-comment {
     margin-bottom: 16px;
 }
 
-.name {
+.modal-form-field {
     margin-bottom: 8px;
 }
 
@@ -846,18 +849,21 @@ font-weight: 400;
     width: 16px;
     height: 16px;
     border-radius: 2px;
-        border: 1px solid rgba(46, 47, 66, 0.4);
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
-        fill: transparent;
-        margin-right: 8px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+    fill: transparent;
+    margin-right: 8px;
+}
+
+:root {
+    --accent-color: #404bbf;
 }
 
 .modal-input-check:checked + .user-agreement > .check-agreement{
-background-color: #404BBF;
+background-color: var(--accent-color);
 border: none;
 fill: #F4F4FD;
 }
