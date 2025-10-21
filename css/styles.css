@@ -173,7 +173,7 @@ border-radius: 2px;
     margin-right: auto;
 }
 
-.title-benefits {
+.visually-hidden {
         position: absolute;
         width: 1px;
         height: 1px;
